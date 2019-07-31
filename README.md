@@ -1,5 +1,5 @@
 ### Date created
-This project was created on July 31, 2019.
+July 31, 2019.
 
 ### Project Title
 Data analysis for bike sharing in Chicago, Washington, and New York City
