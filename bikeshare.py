@@ -91,7 +91,7 @@ def time_stats(df):
     """
     Displays statistics on the most frequent times of travel.
 
-    Includes the most popular month, day, and start hour. 
+    Includes the most popular month, day, and start hour.
 
     """
 
@@ -203,17 +203,12 @@ def raw_data(df):
     """Asks the user if they want to see the raw data."""
 
     rowNum = 0
-
     user_response = input("\n Would you like to see five rows of the raw data? Please write 'yes' or 'no' \n").lower()
 
-    while True:
-        if user_response == 'no':
-            break
-
-        if user_response == 'yes':
-            print(df[rowNum: rowNum + 5])
-            rowNum = rowNum + 5
-            user_response = input("\n Would you like to see five more rows of the raw data? Please write 'yes' or 'no' \n").lower()
+    while user_response == 'yes':
+        print(df[rowNum: rowNum + 5])
+        rowNum = rowNum + 5
+        user_response = input("\n Would you like to see five more rows of the raw data? Please write 'yes' or 'no' \n").lower()
 
 def main():
     while True:
