@@ -88,7 +88,12 @@ def load_data(city, month, day):
 
 
 def time_stats(df):
-    """Displays statistics on the most frequent times of travel."""
+    """
+    Displays statistics on the most frequent times of travel.
+
+    Includes the most popular month, day, and start hour. 
+
+    """
 
     print('\nCalculating The Most Frequent Times of Travel...\n')
     start_time = time.time()
@@ -123,7 +128,7 @@ def station_stats(df):
     """
     Displays statistics on the most popular stations and trip.
 
-    Frequent_combo creates a new column which contains both the start and 
+    Frequent_combo creates a new column which contains both the start and
     end station in order to find the most popular combination
 
     """
