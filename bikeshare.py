@@ -160,7 +160,7 @@ def trip_duration_stats(df):
     start_time = time.time()
 
     # display total travel time
-    print("Travelers used the bikeshare system for a total of ", (df['Trip Duration'].sum()/360), " hours.")
+    print("Travelers used the bikeshare system for a total of ", (df['Trip Duration'].sum()/3600), " hours.")
 
 
     # display mean travel time
